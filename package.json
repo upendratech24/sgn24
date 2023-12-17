@@ -1,0 +1,22 @@
+{
+  "name": "sgn24",
+  "version": "1.0.0",
+  "description": "Trial of Products",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/upendratech24/sgn24.git"
+  },
+  "author": "Upen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/upendratech24/sgn24/issues"
+  },
+  "homepage": "https://github.com/upendratech24/sgn24#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  }
+}
