@@ -1,3 +1,117 @@
 @tailwind base;
 @tailwind components;
+* {
+  @apply m-0 p-0 text-sm box-border;
+}
+
+/*******************************(CSS for App.js)*******************************/
+.App_Container {
+  @apply flex justify-center items-center;
+}
+
+/*******************************(CSS for Login Page)*******************************/
+
+.Login_Container {
+  @apply flex flex-col justify-center items-center;
+}
+.Login_Container_U {
+  @apply h-[400px] border-[1px] w-[365px] flex flex-col justify-center items-center mt-[30px];
+}
+.Login_Container_U_Logo {
+  @apply h-[135px] w-[370px] flex justify-center items-center text-3xl font-extrabold;
+}
+.Login_Container_M {
+  @apply h-[60px] border-[1px] w-[365px] flex justify-center items-center m-3;
+}
+.Login_Container_M_SU {
+  @apply font-semibold text-[#5FAAFF] cursor-pointer;
+}
+.Login_Container_L {
+  @apply flex justify-center items-start h-[60px] w-[365px];
+}
+
+/*******************************(CSS for Sign Up Page)*******************************/
+.SignUp {
+  @apply mt-0 flex flex-col justify-center items-center;
+}
+.SignUp_Container_U {
+  @apply h-[620px] border-[1px] w-[365px] flex flex-col justify-between items-center mt-[30px] pb-6;
+}
+
+/*******************************(CSS for Login Main)*******************************/
+.LoginMain_Container {
+  @apply flex justify-center items-center;
+}
+
+/*******************************(User_Homepage)*******************************/
+.User_Homepage {
+  @apply w-screen h-screen;
+}
+
+/*******************************(User Dockleft)*******************************/
+
+.User_Homepage_Dockleft {
+  @apply h-[100vh] w-[16vw] flex flex-col border-r-[1px] ml-0;
+}
+.User_Homepage_Dockleft_U {
+  @apply h-[10vh] w-[16vw] border-2;
+}
+.User_Homepage_Dockleft_M {
+  @apply h-[80vh] w-[16vw] border-2;
+}
+.User_Homepage_Dockleft_L {
+  @apply h-[10vh] w-[16vw] border-2;
+}
+/*******************************()*******************************/
+/*******************************()*******************************/
+/*******************************()*******************************/
+/*******************************()*******************************/
+/*******************************()*******************************/
+/*******************************()*******************************/
+
+/*******************************(Button Components)*******************************/
+.Button1 {
+  @apply flex justify-center items-center w-[280px] h-[32px] bg-[#5faaff] text-white rounded-lg font-semibold m-3;
+}
+
+/*******************************(Input Components)*******************************/
+.Input1 {
+  @apply h-[36px] w-[280px] flex justify-center items-center border-[1px] rounded-sm p-[9px] bg-[#FAFAFA] m-1;
+}
+
+/*******************************(Other Components)*******************************/
+.OrSeparator {
+  @apply flex flex justify-between items-center w-[280px] m-3;
+}
+.OrSeparator_LR {
+  @apply min-w-[110px] min-h-[1px] border-[0.5px];
+}
+.OrSeparator_M {
+  @apply font-semibold text-[#737373];
+}
+.BWBr_Blue {
+  @apply text-[14px] text-[#385185] font-semibold cursor-pointer m-3;
+}
+.BWBr_Plain {
+  @apply cursor-pointer m-3;
+}
+
+/*******************************(Text Components)*******************************/
+.Text1 {
+  @apply text-[#737373] text-[16px] font-semibold m-3;
+}
+.Text2 {
+  @apply h-[50px] w-[270px] flex justify-center items-center m-2;
+}
+.Text2_1 {
+  @apply text-[#737373] justify-center items-center;
+}
+.Text2_2 {
+  @apply text-[#00376B] cursor-pointer;
+}
+
+/*******************************(Carousel Components)*******************************/
+.Carousel1 {
+  @apply w-[365px] h-[540px] border-[1px] bg-[#FAFAFA] mt-[30px];
+}
 @tailwind utilities;
