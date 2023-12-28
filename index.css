@@ -3,6 +3,9 @@
 * {
   @apply m-0 p-0 text-sm box-border;
 }
+.Null_Container {
+  @apply max-h-0 max-w-0;
+}
 
 /*******************************(CSS for App.js)*******************************/
 .App_Container {
@@ -44,24 +47,38 @@
 }
 
 /*******************************(User_Homepage)*******************************/
-.User_Homepage {
-  @apply w-screen h-screen;
+.User_HP {
+  @apply w-screen h-screen flex justify-between;
 }
 
 /*******************************(User Dockleft)*******************************/
 
-.User_Homepage_Dockleft {
-  @apply h-[100vh] w-[16vw] flex flex-col border-r-[1px] ml-0;
+.User_HP_DL {
+  @apply h-[100vh] w-[16vw] flex flex-col justify-start items-center border-r-[1px] ml-0;
 }
-.User_Homepage_Dockleft_U {
-  @apply h-[10vh] w-[16vw] border-2;
+.User_HP_DL_U {
+  @apply h-[15vh] w-[16vw] border-2;
 }
-.User_Homepage_Dockleft_M {
-  @apply h-[80vh] w-[16vw] border-2;
+.User_HP_DL_M {
+  @apply h-[70vh] w-[16vw] border-2;
 }
-.User_Homepage_Dockleft_L {
-  @apply h-[10vh] w-[16vw] border-2;
+.User_HP_DL_L {
+  @apply h-[15vh] w-[16vw] border-2;
 }
+/*******************************(User Dockright)*******************************/
+.User_HP_DR {
+  @apply h-[100vh] w-[25vw] flex flex-col justify-center items-center mr-0 bg-[#FAFAFA];
+}
+.User_HP_DR_U {
+  @apply h-[30vh] w-[25vw] border-[1px] flex justify-center items-center;
+}
+.User_HP_DR_M {
+  @apply h-[40vh] w-[25vw] border-[1px] flex justify-center items-center;
+}
+.User_HP_DR_L {
+  @apply h-[30vh] w-[25vw] border-[1px] flex justify-center items-center;
+}
+
 /*******************************()*******************************/
 /*******************************()*******************************/
 /*******************************()*******************************/
@@ -95,7 +112,15 @@
 .BWBr_Plain {
   @apply cursor-pointer m-3;
 }
-
+.SB_LP_Logoimg {
+  @apply w-[48px] h-[48px] p-2 bg-[#5faaff] overflow-hidden;
+}
+.SB_RP_Title {
+  @apply w-max h-max p-2 flex justify-center items-start pt-4 text-[16px] font-semibold;
+}
+.SB_Component {
+  @apply w-[14vw] border-[1px] h-[48px] rounded-lg cursor-pointer hover:bg-[#FAFAFA] overflow-hidden m-3 flex;
+}
 /*******************************(Text Components)*******************************/
 .Text1 {
   @apply text-[#737373] text-[16px] font-semibold m-3;

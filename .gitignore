@@ -8,4 +8,4 @@ coverage/
 Thumbs.db
 .DS_Store
 .parcel-cache/
-myComponent/
+# myComponent/

@@ -1,15 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import LoginMain from "./myComponent/Pages/LoginMain.js";
-import Login from "./myComponent/Pages/Login.js";
-import SignUp from "./myComponent/Pages/SignUp.js";
-import User_Homepage from "./myComponent/Pages/User_Homepage.js";
-import Error from "./myComponent/Pages/Error.js";
+import SignUp from "./myComponent/Pages/SignUp";
+import Login from "./myComponent/Pages/Login";
+import LoginMain from "./myComponent/Pages/LoginMain";
+import User_HP from "./myComponent/Pages/User_HP";
+import Error from "./myComponent/Pages/Error";
 
 const App = () => {
   return (
     <div className="App_Container">
+      <div className="Null_Container"></div>
       <Outlet />
       {console.log("App Rendered...")}
     </div>
@@ -22,6 +23,10 @@ const AppRouter = createBrowserRouter([
     element: <App />,
     children: [
       {
+        path: "/",
+        element: <LoginMain />,
+      },
+      {
         path: "/accounts/emailsignup/",
         element: <SignUp />,
       },
@@ -30,12 +35,8 @@ const AppRouter = createBrowserRouter([
         element: <Login />,
       },
       {
-        path: "/accounts/loginmain/",
-        element: <LoginMain />,
-      },
-      {
-        path: "/userhomepage/",
-        element: <User_Homepage />,
+        path: "/accounts/user/",
+        element: <User_HP />,
       },
     ],
     errorElement: <Error />,
